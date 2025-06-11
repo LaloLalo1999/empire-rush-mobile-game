@@ -1,0 +1,92 @@
+Unity Editor version:    2023.2.20f1 (0e25a174756c)
+Branch:                  2023.2/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.5 (Build 24F74)
+Darwin version:          24.5.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        24576 MB
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-eduardojaviergarcialopez" at "2025-06-11T01:36:02.688372Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 97403, path: "/Applications/Unity Hub.app/Contents/Frameworks/UnityLicensingClient_V1.app/Contents/MacOS/Unity.Licensing.Client")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.0+aa6cfba
+  Session Id:              f28e8e48a5274e919bcde3484d4c5113
+  Correlation Id:          95f3f01d112cf1c5a6889a2805b354e1
+  External correlation Id: 1086288027102776106
+  Machine Id:              +7Fk1tKab1mUqmbTatvFqCJyF0U=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eduardojaviergarcialopez" (connect: 0.00s, validation: 0.02s, handshake: 0.21s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-eduardojaviergarcialopez-notifications" at "2025-06-11T01:36:02.921611Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+[Licensing::Client] Successfully resolved entitlements
+[Licensing::Module] Serial number assigned to: "3929148-UnityPersXXXX"
+Pro License: NO
+Launching external process: /Applications/Unity/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Unity.app/Contents/MacOS/Unity
+-quit
+-batchmode
+-projectPath
+/Users/eduardojaviergarcialopez/AddictGame
+-buildTarget
+iOS
+-executeMethod
+BuildScript.BuildiOS
+-logFile
+/Users/eduardojaviergarcialopez/AddictGame/build_ios.log
+Successfully changed project path to: /Users/eduardojaviergarcialopez/AddictGame
+/Users/eduardojaviergarcialopez/AddictGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8481890048] Host "[IP] 192.168.1.96 [Port] 55504 [Flags] 2 [Guid] 2373157136 [EditorId] 2373157136 [Version] 1048832 [Id] OSXEditor(0,Eduardos-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8481890048] Host "[IP] 192.168.1.96 [Port] 55504 [Flags] 2 [Guid] 2373157136 [EditorId] 2373157136 [Version] 1048832 [Id] OSXEditor(0,Eduardos-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+[Package Manager] Connected to IPC stream "Upm-931" after 2.5 seconds.
+Library Redirect Path: Library/
+Cannot upgrade database Library/SourceAssetDB. Will delete the database and recreate content in the new format instead.[Licensing::Client] Successfully resolved entitlements
+[Package Manager] Done resolving packages in 5.90 seconds
+[Licensing::Client] Successfully resolved entitlement details
+An error occurred while resolving packages:
+  Project has invalid dependencies:
+    com.unity.multiplayer.center: Package [com.unity.multiplayer.center@1.0.0] cannot be found
+    com.unity.test-framework: Package [com.unity.test-framework@1.5.1] cannot be found
+  One or more packages could not be added to the local file system:
+    com.unity.ai.navigation: Manifest [/Users/eduardojaviergarcialopez/AddictGame/Library/PackageCache/com.unity.ai.navigation@2.0.7/package.json] is invalid:
+      '6000.0' is not a valid `unity` property value. Expected '<year>.<version>'.
+[Package Manager] Server process was shutdown

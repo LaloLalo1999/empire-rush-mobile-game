@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using EmpireRush.Core;
 using EmpireRush.Economy;
 
@@ -21,8 +20,8 @@ namespace EmpireRush.UI
         [SerializeField] private GameObject offlineEarningsPanel;
         
         [Header("Resource Display")]
-        [SerializeField] private TextMeshProUGUI coinsText;
-        [SerializeField] private TextMeshProUGUI gemsText;
+        [SerializeField] private Text coinsText;
+        [SerializeField] private Text gemsText;
         [SerializeField] private EnergyUI energyUI;
         
         [Header("Business UI")]
@@ -35,8 +34,8 @@ namespace EmpireRush.UI
         [SerializeField] private float notificationDuration = 3f;
         
         [Header("Offline Earnings")]
-        [SerializeField] private TextMeshProUGUI offlineEarningsAmountText;
-        [SerializeField] private TextMeshProUGUI offlineTimeText;
+        [SerializeField] private Text offlineEarningsAmountText;
+        [SerializeField] private Text offlineTimeText;
         [SerializeField] private Button collectOfflineButton;
         [SerializeField] private Button doubleOfflineButton;
         
@@ -300,7 +299,7 @@ namespace EmpireRush.UI
             
             if (notification != null)
             {
-                TextMeshProUGUI notificationText = notification.GetComponentInChildren<TextMeshProUGUI>();
+                Text notificationText = notification.GetComponentInChildren<Text>();
                 if (notificationText != null)
                 {
                     notificationText.text = message;

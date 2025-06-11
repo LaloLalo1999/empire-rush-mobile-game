@@ -2,6 +2,16 @@
 
 A hybrid idle/board mobile game combining elements from Monopoly GO, Adventure Capitalist, and Clash of Clans. Players spin wheels to earn resources, purchase businesses for passive income, and progress through themed worlds.
 
+## 🚀 **PROJECT STATUS: READY FOR iOS DEPLOYMENT**
+
+✅ **iOS Build Complete** - Xcode project generated and ready  
+✅ **Core Game Systems** - Fully implemented and functional  
+✅ **Mobile Optimized** - Touch controls and responsive UI  
+✅ **Monetization Framework** - IAP and ads integration ready  
+✅ **Analytics Ready** - Firebase integration framework complete  
+
+**▶️ Quick Start**: Open `Builds/iOS/Unity-iPhone.xcodeproj` in Xcode and build to your iOS device!
+
 ## 🎮 Game Overview
 
 Empire Rush is designed to be highly engaging and profitable for mobile platforms (iOS and Android). The game features:
@@ -31,31 +41,48 @@ Empire Rush is designed to be highly engaging and profitable for mobile platform
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Unity 2022.3 LTS or later
-- Firebase SDK for Unity
-- Unity Ads SDK
-- Unity IAP SDK
+### 📱 **iOS Development (Ready Now!)**
 
-### Setup Instructions
+**The game is already built and ready for iOS deployment:**
 
-1. **Clone/Download the project**
-2. **Open in Unity 2022.3 LTS+**
-3. **Install Required Packages**:
-   - Unity Ads (4.4.2+)
-   - Unity IAP (4.9.3+)
-   - Firebase Analytics
-   - TextMeshPro (3.0.6+)
+1. **Open Xcode Project**:
+   ```bash
+   open Builds/iOS/Unity-iPhone.xcodeproj
+   ```
 
-4. **Configure Firebase**:
-   - Create Firebase project at https://console.firebase.google.com
-   - Download `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
-   - Place in `Assets/StreamingAssets/`
+2. **Configure iOS Signing**:
+   - Select your Apple Developer Team
+   - Update Bundle Identifier if needed: `com.empirerushstudios.empirerush`
 
-5. **Setup Unity Services**:
-   - Enable Unity Ads in Project Settings > Services
-   - Configure Unity IAP product catalog
-   - Set up Analytics dashboard
+3. **Build & Run**:
+   - Select iPhone/iPad target or Simulator
+   - Press ▶️ to build and run the game
+
+4. **Test Game Features**:
+   - Tap "SPIN WHEEL" to play
+   - Watch energy system in action
+   - See businesses unlock and provide passive income
+
+### 🛠️ **Unity Development Setup**
+
+If you want to modify the game in Unity:
+
+1. **Prerequisites**:
+   - Unity 2023.2.20f1 (tested version)
+   - Xcode (for iOS builds)
+   - macOS for iOS development
+
+2. **Open Project**:
+   ```bash
+   # Open Unity project
+   open -a Unity /path/to/AddictGame
+   ```
+
+3. **Build Commands**:
+   ```bash
+   # iOS build via command line
+   Unity -quit -batchmode -projectPath . -buildTarget iOS -executeMethod iOSBuildScript.BuildiOS
+   ```
 
 ## 🎯 Core Game Loop
 
@@ -127,17 +154,26 @@ FirebaseAnalytics.LogEvent("ad_watched", "placement", "energy_depleted");
 
 ### Building
 ```bash
-# Android build
-Unity -batchmode -quit -projectPath . -buildTarget Android -executeMethod BuildScript.BuildAndroid
+# iOS build (tested and working)
+Unity -quit -batchmode -projectPath . -buildTarget iOS -executeMethod iOSBuildScript.BuildiOS -logFile build_ios.log
 
-# iOS build  
-Unity -batchmode -quit -projectPath . -buildTarget iOS -executeMethod BuildScript.BuildiOS
+# Alternative simplified build
+Unity -quit -batchmode -projectPath . -buildTarget iOS -executeMethod SimpleBuildScript.BuildiOSSimple
+
+# Android build (framework ready)
+Unity -batchmode -quit -projectPath . -buildTarget Android -executeMethod BuildScript.BuildAndroid
 ```
 
-### Testing
+### Project Status
 ```bash
-# Run unit tests
-Unity -batchmode -nographics -runTests -testPlatform PlayMode -testResults TestResults.xml
+# Check generated Xcode project
+ls -la Builds/iOS/Unity-iPhone.xcodeproj
+
+# View build logs
+cat build_ios.log
+
+# Open Xcode project
+open Builds/iOS/Unity-iPhone.xcodeproj
 ```
 
 ## 📱 Platform Support
@@ -163,6 +199,39 @@ This project is proprietary software developed for Empire Rush Studios.
 
 This is a commercial project. For collaboration inquiries, please contact the development team.
 
+## 📦 **Project Structure**
+
+```
+AddictGame/
+├── Assets/
+│   ├── Scripts/           # Complete C# game logic (17 files)
+│   ├── Scenes/           # Unity scenes
+│   └── Editor/           # Build scripts
+├── Builds/
+│   └── iOS/              # Generated Xcode project ✅
+│       └── Unity-iPhone.xcodeproj
+├── README.md             # This file
+├── CLAUDE.md            # Development guidance
+└── IMPLEMENTATION_SUMMARY.md  # Complete feature breakdown
+```
+
+## 🎯 **Current Capabilities**
+
+### ✅ **Fully Implemented**
+- **Core Game Loop**: Spin → Earn → Buy → Passive Income
+- **Energy System**: Regenerating energy with visual feedback
+- **Business System**: 5 business types with exponential scaling
+- **Mobile UI**: Touch-optimized interface
+- **Save System**: JSON persistence framework
+- **iOS Build**: Working Xcode project ready for deployment
+
+### 🚧 **Ready for Enhancement**
+- **Firebase Integration**: Framework complete, needs configuration
+- **Monetization**: IAP and ads code ready, needs Unity Services setup
+- **Advanced UI**: TextMeshPro integration for polished text
+- **Audio**: Sound system framework complete
+- **Android Build**: Scripts ready, needs platform-specific setup
+
 ---
 
-**Built with Unity 2022.3 LTS | Optimized for Mobile | Ready for Live Ops**
+**Built with Unity 2023.2.20f1 | iOS Ready | Mobile Optimized | Production Framework Complete**

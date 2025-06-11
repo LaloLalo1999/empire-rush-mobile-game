@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using EmpireRush.Economy;
 using EmpireRush.Core;
 
@@ -12,8 +11,8 @@ namespace EmpireRush.UI
     {
         [Header("UI Components")]
         [SerializeField] private Slider energySlider;
-        [SerializeField] private TextMeshProUGUI energyText;
-        [SerializeField] private TextMeshProUGUI regenTimerText;
+        [SerializeField] private Text energyText;
+        [SerializeField] private Text regenTimerText;
         [SerializeField] private Button buyEnergyButton;
         [SerializeField] private GameObject energyFullIndicator;
         

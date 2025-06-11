@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using EmpireRush.Economy;
 
 namespace EmpireRush.UI
@@ -8,10 +7,10 @@ namespace EmpireRush.UI
     public class BusinessUI : MonoBehaviour
     {
         [Header("UI Components")]
-        [SerializeField] private TextMeshProUGUI businessNameText;
-        [SerializeField] private TextMeshProUGUI levelText;
-        [SerializeField] private TextMeshProUGUI incomeText;
-        [SerializeField] private TextMeshProUGUI costText;
+        [SerializeField] private Text businessNameText;
+        [SerializeField] private Text levelText;
+        [SerializeField] private Text incomeText;
+        [SerializeField] private Text costText;
         [SerializeField] private Button purchaseUpgradeButton;
         [SerializeField] private Image businessIcon;
         [SerializeField] private GameObject ownedIndicator;
@@ -101,7 +100,7 @@ namespace EmpireRush.UI
             costText.text = FormatNumber(cost);
             
             // Update button text
-            TextMeshProUGUI buttonText = purchaseUpgradeButton.GetComponentInChildren<TextMeshProUGUI>();
+            Text buttonText = purchaseUpgradeButton.GetComponentInChildren<Text>();
             if (buttonText != null)
             {
                 buttonText.text = business.IsOwned ? "UPGRADE" : "BUY";
